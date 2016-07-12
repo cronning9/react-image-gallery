@@ -19,5 +19,5 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-  <App name="Chris"/>, document.getElementById('container')
+  <App name="faggiot"/>, document.getElementById('container')
 )
