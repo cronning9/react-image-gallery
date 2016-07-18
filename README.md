@@ -5,6 +5,9 @@ via the form.
 
 This runs with webpack-dev-server, as it's not intended to be a full stack application.
 
+To start, clone the repo and run `npm install`. Everything important is in the package.json.
+
+Running `npm start` will spin up a webpack-dev-server. By default, the app is run through localhost:8080. 
 ### Current Issues
 
 - Though 'onClick' events on the Photo component's `like-button` div registers
