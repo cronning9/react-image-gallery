@@ -1,0 +1,23 @@
+#intro {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #5f9ea0; 
+}
+
+.photo-submit {
+  margin-top: 15px;
+}
+
+form > input {
+  margin-top: 5px;
+}
+
+.like-button {
+  height: 45px;
+  width: 50px;
+  background-image: url(../assets/heart.jpg);
+}
+
+.liked {
+  background-image: url(../assets/red-heart.jpg);
+}
