@@ -31,7 +31,6 @@ class PhotoForm extends React.Component {
                caption: caption});
     this.setState({ url: '', caption: '' });
     this.props.onPhotoSubmit({url: url, caption: caption})
-    console.log(data);
   }
 
   render() {

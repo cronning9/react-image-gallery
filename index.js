@@ -10,12 +10,6 @@ const app =     express();
 
 const PORT =    process.env.PORT || 8080;
 
-if (process.env.NODE_ENV !== 'production') {
-  var webpack =  require('webpack');
-  var config =   require('./webpack.config');
-  var compiler = webpack(config);
-}
-
 app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, 'dist')));
