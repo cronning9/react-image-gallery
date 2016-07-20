@@ -5,6 +5,8 @@ const ReactDOM = require('react-dom');
 const Photo = require('./Photo')
 const PhotoForm = require('./PhotoForm');
 
+require('./style/style.css');
+
 const data = require('./data/data');
 
 

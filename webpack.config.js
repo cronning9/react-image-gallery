@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -25,7 +26,15 @@ module.exports = {
           presets: ['react', 'es2015']
         },
       },
+      { 
+        test: /\.css$/, 
+        loader: "style-loader!css-loader"
+      },
+      {
+        test: /\.jpg$/,
+        loader: "file-loader"
+      }
     ]
   },
-  plugins: [HTMLWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig, ExtractTextPlugin]
 };

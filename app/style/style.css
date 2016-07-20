@@ -15,9 +15,8 @@ form > input {
 .like-button {
   height: 45px;
   width: 50px;
-  background-image: url(../assets/heart.jpg);
 }
 
-.liked {
+/*.liked {
   background-image: url(../assets/red-heart.jpg);
-}
+}*/

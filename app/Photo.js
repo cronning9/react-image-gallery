@@ -1,20 +1,23 @@
-const React = require('react');
+const React =   require('react');
+
+const unliked = require('./assets/heart.jpg');
+const liked =   require('./assets/red-heart.jpg');
 
 class Photo extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      liked: false
+      liked: false,
+      likeBtn : unliked
     }
     this.toggleLiked = this.toggleLiked.bind(this);
-    this.classes = 'like-button'
   }
 
   render() { 
     return (<div className="photo">
               <h3>{this.props.caption}</h3>
               <img src={this.props.src} />
-              <div onClick={this.toggleLiked} className={this.classes} ></div>
+              <img src={this.state.likeBtn} onClick={this.toggleLiked} className="like-button"></img>
             </div>
       )
   }
@@ -25,7 +28,13 @@ class Photo extends React.Component {
     event.preventDefault();
     console.log('clicked');
     this.setState({ liked: !this.state.liked });
-    this.state.liked ? this.classes += ' liked' : this.classes = 'like-button';
+    
+    if (this.state.liked) { 
+      this.setState( {likeBtn: liked });
+    } else {
+      this.setState( {likeBtn: unliked });
+    }
+
   }
 }
 
