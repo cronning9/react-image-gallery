@@ -1,6 +1,8 @@
 'use strict';
 
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
@@ -8,10 +10,10 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: "./app/index.js",
+  entry: "./app/app.js",
   output: {
     filename: "bundle.js",
-    path: __dirname + '/dist'
+    path: path.join(__dirname, '/dist')
   },
   module: {
     loaders: [
@@ -21,7 +23,7 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015']
-        }
+        },
       },
     ]
   },
