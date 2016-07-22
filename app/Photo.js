@@ -21,8 +21,6 @@ class Photo extends React.Component {
       )
   }
 
-  // Though onClick catches every click, state doesn't change on the first click of the
-  // div. Need to determine why. After the first click, it works as normal.
   toggleLiked(event) {
     event.preventDefault();
     console.log('clicked');
