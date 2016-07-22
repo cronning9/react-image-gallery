@@ -8,7 +8,6 @@ class Photo extends React.Component {
     super(props)
     this.state = {
       liked: false,
-      likeBtn : unliked
     }
     this.toggleLiked = this.toggleLiked.bind(this);
   }
@@ -17,7 +16,7 @@ class Photo extends React.Component {
     return (<div className="photo">
               <h3>{this.props.caption}</h3>
               <img src={this.props.src} />
-              <img src={this.state.likeBtn} onClick={this.toggleLiked} className="like-button"></img>
+              <img src={this.state.liked ? liked : unliked } onClick={this.toggleLiked} className="like-button"></img>
             </div>
       )
   }
@@ -29,12 +28,6 @@ class Photo extends React.Component {
     console.log('clicked');
     this.setState({ liked: !this.state.liked });
     
-    if (this.state.liked) { 
-      this.setState( {likeBtn: liked });
-    } else {
-      this.setState( {likeBtn: unliked });
-    }
-
   }
 }
 
