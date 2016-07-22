@@ -1,7 +1,7 @@
 const React =   require('react');
 
-const unliked = require('./assets/heart.jpg');
-const liked =   require('./assets/red-heart.jpg');
+const unliked = require('../../assets/heart.jpg');
+const liked =   require('../../assets/red-heart.jpg');
 
 class Photo extends React.Component {
   constructor(props) {

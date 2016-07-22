@@ -1,6 +1,6 @@
 const React = require('react');
 
-const data = require('./data/data');
+const data = require('../../data/data');
 
 class PhotoForm extends React.Component {
   constructor(props) {
