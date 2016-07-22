@@ -1,8 +1,29 @@
-#intro {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 5px solid #5f9ea0; 
+.header {
+  border-bottom: 5px solid #5f9ea0;
 }
+
+.header #title {
+  display: inline-block;
+  font-family: Impact, sans-serif;
+}
+
+.header #login {
+  margin-top: 50px;
+  display: inline-block;
+  float: right;
+
+  width: 200px;
+  height: 100px;
+}
+
+#login button {
+  float: right;
+}
+
+/*#intro {
+  margin-bottom: 20px;
+  padding-bottom: 10px; 
+}*/
 
 .photo-submit {
   margin-top: 15px;
