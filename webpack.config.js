@@ -11,7 +11,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: "./app/main.js",
+  entry: "./app/main.jsx",
   output: {
     filename: "bundle.js",
     path: path.join(__dirname, '/dist')
@@ -20,7 +20,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {

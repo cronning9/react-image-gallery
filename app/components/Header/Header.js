@@ -2,13 +2,11 @@
 
 const React = require('react');
 
-const LoginBox = require('./LoginBox');
-
-const Header = () => {
+const Header = ({children}) => {
   return (
     <header className='header'>
       <div id='title'><h1>PhoGallery</h1></div>
-      <LoginBox />
+      {children}
     </header>
   )
 }
