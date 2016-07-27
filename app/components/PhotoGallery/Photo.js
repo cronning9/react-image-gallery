@@ -16,7 +16,9 @@ class Photo extends React.Component {
     return (<div className="photo">
               <h3>{this.props.caption}</h3>
               <img src={this.props.src} />
-              <img src={this.state.liked ? liked : unliked } onClick={this.toggleLiked} className="like-button"></img>
+              <img src={this.state.liked ? liked : unliked } 
+                   onClick={this.toggleLiked} 
+                   className="like-button"></img>
             </div>
       )
   }
