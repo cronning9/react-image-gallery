@@ -4,14 +4,13 @@ const React = require('react');
 const Photo = require('./Photo')
 const PhotoForm = require('./PhotoForm');
 
-const data = require('../../data/data');
 
 class PhotoGallery extends React.Component {
   constructor(props) {
     super(props);
     
     this.state = {
-      photos: data
+      photos: this.props.photos
     }
 
     this.handlePhotoSubmit = this.handlePhotoSubmit.bind(this);
@@ -45,4 +44,7 @@ class PhotoGallery extends React.Component {
   }
 }
 
+PhotoGallery.propTypes = {
+
+}
 module.exports = PhotoGallery;
