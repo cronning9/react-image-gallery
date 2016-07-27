@@ -13,8 +13,6 @@ There's only one Express route to make the whole app run at this point. I'll fig
 
 ### Current Issues
 
-- Though 'onClick' events on the Photo component's `like-button` registers
-each click, the declared state change does not occur until
-the second click. 
 - Image urls are stored locally in the client. IRL, would 
 make an ajax request and send it to a server.   
+- Need to import Twitter-Bootstrap for style purposes. 

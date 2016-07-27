@@ -11,11 +11,12 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: "./app/app.js",
+  entry: "./app/main.js",
   output: {
     filename: "bundle.js",
     path: path.join(__dirname, '/dist')
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [
       {
