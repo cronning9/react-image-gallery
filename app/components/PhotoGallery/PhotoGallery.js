@@ -4,7 +4,6 @@ const React = require('react');
 const Photo = require('./Photo')
 const PhotoForm = require('./PhotoForm');
 
-
 class PhotoGallery extends React.Component {
   constructor(props) {
     super(props);
@@ -45,6 +44,6 @@ class PhotoGallery extends React.Component {
 }
 
 PhotoGallery.propTypes = {
-
+  photos: React.PropTypes.array
 }
 module.exports = PhotoGallery;
