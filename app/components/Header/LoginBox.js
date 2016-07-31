@@ -9,10 +9,20 @@ const React = require('react');
 // or not.
 const LoginBox = ({user}) => {
   
+  const openMenu = () => {
+    document.getElementById('menu-content').classList.toggle("show");
+  };
+  
   let display;
   if (user) {
     display = <div id="user">
-                <button type="button">{user.username}</button>
+                <button type="button" onClick={openMenu}>{user.username}</button>
+                <div id="menu-content" className="content">
+                  <a href="#">My Gallery</a>
+                  <a href="#">Explore</a>
+                  <a href="#">Profile</a>
+                  <a href="#">Log Out</a>
+                </div>
               </div>
   } else {
     display = <div id="login">

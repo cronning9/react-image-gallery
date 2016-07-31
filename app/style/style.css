@@ -1,13 +1,14 @@
 .header {
   border-bottom: 5px solid #5f9ea0;
+  font-family: Impact, sans-serif;
 }
 
 .header #title {
   display: inline-block;
-  font-family: Impact, sans-serif;
+
 }
 
-.header #login, .header #user {
+.header #login {
   margin-top: 50px;
   display: inline-block;
   float: right;
@@ -16,14 +17,68 @@
   height: 100px;
 }
 
+.header #user {
+  margin-top: 5px;
+  display: inline-block;
+  float: right;
+
+  width: 100px;
+  height: 50px;
+}
+
 #login button {
   float: right;
 }
 
-/*#intro {
-  margin-bottom: 20px;
-  padding-bottom: 10px; 
-}*/
+/* Header Menu */
+#user {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+#user button {
+  background-color: #5F9EA0;
+  color: white;
+  outline: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#menu {
+  margin: 0;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  font-family: sans-serif;
+  z-index: 99;
+}
+
+.content a {
+  padding: 5px;
+}
+
+.show {
+  display: block;
+  box-shadow: 4 0 10px 0;
+}
+
+.show a {
+  display: block;
+  background-color: #5F9EA0;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  text-align: left;
+}
 
 .photo-submit {
   margin-top: 15px;
@@ -37,3 +92,4 @@ form > input {
   height: 45px;
   width: 50px;
 }
+
