@@ -15,7 +15,7 @@ class App extends React.Component {
 
     this.state = {
       photos: data,
-      user: {
+      user:  {
         username: "Taylor Swift"
       }
     }

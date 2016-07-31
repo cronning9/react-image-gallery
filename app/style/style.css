@@ -9,12 +9,12 @@
 }
 
 .header #login {
-  margin-top: 50px;
+  margin-top: 20px;
   display: inline-block;
   float: right;
 
   width: 200px;
-  height: 100px;
+  height: 50px;
 }
 
 .header #user {
@@ -38,7 +38,7 @@
   position: relative;
 }
 
-#user button {
+#user button, #login button {
   background-color: #5F9EA0;
   color: white;
   outline: none;
