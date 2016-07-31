@@ -15,7 +15,9 @@ class App extends React.Component {
 
     this.state = {
       photos: data,
-      user: null
+      user: {
+        username: "Taylor Swift"
+      }
     }
 
     this.handlePhotoSubmit = this.handlePhotoSubmit.bind(this);

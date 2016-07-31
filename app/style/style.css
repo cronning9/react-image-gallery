@@ -7,7 +7,7 @@
   font-family: Impact, sans-serif;
 }
 
-.header #login {
+.header #login, .header #user {
   margin-top: 50px;
   display: inline-block;
   float: right;
