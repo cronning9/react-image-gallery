@@ -1,8 +1,7 @@
 'use strict';
 
 const React = require('react');
-const Photo = require('./Photo')
-const PhotoForm = require('./PhotoForm');
+const Photo = require('./Photo');
 
 const PhotoGallery = ({photos, children}) => {
   let renderPhotos = photos.map((photo) => {

@@ -57,7 +57,7 @@
 .content {
   display: none;
   position: absolute;
-  min-width: 150px;
+  min-width: 100px;
   font-family: sans-serif;
   z-index: 99;
 }
